@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>Fake News Detection</title>
+
+{% endblock %}
+
+{% block body %}
+<div>
+    <h1>Result</h1>
+    {% if result == 'Real' %}
+    <p>The news is real</p>
+    {% else %}
+    <p>The news is fake</p>
+    {% endif %}
+</div>
+{% endblock %}
